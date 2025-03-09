@@ -5,7 +5,6 @@ function createFunctionRegistry(){
             userData[name]=fn
         },
         executeFunction:function(name, args, context = null){
-            console.log(userData)
             let bond=userData[name].bind()
             return bond(args)
         },
